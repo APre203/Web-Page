@@ -51,7 +51,7 @@ body {
 }
 
 section {
-    padding: 5em 2em;
+    padding: 5em 2em ;
 }
 
 img {
@@ -59,12 +59,21 @@ img {
     max-width: 100%;
 }
 
-strong {font-weight: var(--fw-bold);}
+strong {
+    font-weight: var(--fw-bold);
+    margin-bottom: .25em;}
 
 :focus {
     outline: 3px solid var(--clr-accent);
     outline-offset: 3px;
 }
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
 
 /* Buttons */
 
@@ -103,6 +112,7 @@ h3 { font-size: var(--fs-h3);}
 }
 
 .section__title--intro {
+    position: relative;
     font-weight: var(--fw-reg);
 }
 
@@ -115,10 +125,15 @@ h3 { font-size: var(--fs-h3);}
     font-size: var(--fs-h3);
 }
 
-.section__subtitle--intro,
+.section__subtitle--intro{
+    background: var(--clr-accent);
+    padding: 0.25em calc(10%);
+    font-family: var(--ff-secondary);
+    margin-bottom: 1em;
+}
 .section__subtitle--about {
     background: var(--clr-accent);
-    padding: .25em 1em;
+    padding: 0.25em 1em;
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
 }
@@ -168,7 +183,7 @@ header{
 .nav__link{
     color: inherit;
     font-weight: var(--fw-bold);
-    font-size: var(--fs-h3); /*HERE*/
+    font-size: var(--fs-h1); /*HERE*/
     text-decoration: none;
 }
 
@@ -273,9 +288,8 @@ header{
         grid-row: 2;
         text-align: right;
         position: relative;
-        left: 0em;
-        right: 0em;
-        width: 30em;
+        left: -1.5em;
+        width: calc(100% - 3em);
 
     }
 }
@@ -358,6 +372,7 @@ header{
         width: calc(100% + 2em);
         padding-left: 1em;
         padding-right: 0em;
+        
     }
 
     .about-me__img{
@@ -459,4 +474,5 @@ header{
     margin-left: auto;
     margin-right: auto;
 }
+
 
